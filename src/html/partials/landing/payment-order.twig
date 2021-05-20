@@ -1,0 +1,82 @@
+{% from '../../macros/icon.twig' import icon %}
+
+<div class="container">
+	<div class="payment-order">
+			<div class="payment-order__header">
+				<a href="#" class="payment-order__close">&nbsp;</a>
+				<div class="payment-order__title">Платежное поручение № 5241234 от 23.09.2015</div>
+			</div>
+			<div class="payment-order__holder">
+				<div class="payment-order__content">
+					<div class="payment-order-summ">
+						<div class="payment-order-summ__value">– 23 500,00 ₽</div>
+						<div class="payment-order-summ__caption"><span>со счета:</span> Расчетный счет (***012345)</div>
+						<div class="payment-order-summ__status">ИСПОЛНЕН, 21 июня 15:33</div>
+					</div>
+					<div class="payment-order-info">
+						<div class="payment-order-info__main">
+							<div class="payment-order-info__main__corner"></div>
+							<div class="payment-order-info__details">
+								<div class="payment-order-info__title">ООО "Родные просторы"</div>
+								<ul>
+									<li>ИНН: 22341497819132</li>
+									<li>Банк: ОАО Сбербанк</li>
+									<li>БИК: 2352362365</li>
+									<li>Счет: 40802810970010000395</li>
+								</ul>
+							</div>
+							<div class="payment-order-info__features">
+								<div class="feature">
+									<div class="feature__label"><a href="#">Высокая финансовая <br> устойчиваость</a></div>
+									<div class="feature__circle feature__circle_part" >88</div>
+								</div>
+								<div class="feature">
+									<div class="feature__label"><a href="#">Высокая <br> благонадежность</a></div>
+									<div class="feature__circle" >100</div>
+								</div>
+								<div class="feature">
+									<div class="feature__label"><a href="#">Кредитоспособность <br> 44,5 млрд ₽</a></div>
+									<div class="feature__circle feature__circle_text">1 <span>Класс</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="payment-order-info__description">
+							Оплата за партию ромашек и одуванчиков по договору 14023-023 от 14.05.2015 г. Сумма 11430-00. В том числе НДС 18% - 1450,00 ₽
+						</div>
+					</div>
+					<div class="payment-order__hint">
+						<div>Комиссия банка: 70 р.</div>
+						Размер комиссии рассчитан автоматически согласно тарифу вашей компании и является ознакомительным. Точный размер комиссии определяется после передачи платежного документа на обработку в банк.
+					</div>
+				</div>
+			</div>
+			<div class="payment-order__footer">
+				<ul>
+					<li>
+						<a href="#">
+							{{ icon('search' , {'width': 20, 'height': 20}) }}
+							Повторить
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							{{ icon('star' , {'width': 21, 'height': 20}) }}
+							В избранное
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							{{ icon('repeat' , {'width': 22, 'height': 20}) }}
+							Спросить
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							{{ icon('dots' , {'width': 22, 'height': 4}) }}
+							Действия
+						</a>
+					</li>
+				</ul>
+			</div>
+	</div>
+</div>

@@ -1,0 +1,41 @@
+{% from '../macros/icon.twig' import icon %}
+
+<header class="header">
+	<div class="container">
+			<div class="header__holder">
+				<div class="header__control">
+					<a href="/" class="header__logo">
+						<img src="assets/images/logo.svg" alt="Logo">
+					</a>
+					<div class="header-search">
+						<div class="header-search__btn">
+							{{ icon('search' , {'width': 18, 'height': 18}) }}
+							<span class="header-search__label">ПОИСК</span>
+						</div>
+						<form action="">
+	
+						</form>
+					</div>
+					<nav class="main-nav">
+						<ul>
+							<li class="active"><a href="#">ДЕНЬГИ</a></li>
+							<li><a href="#">КОНТАКТЫ</a></li>
+							<li class="sub"><a href="#">УСЛУГИ</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a href="#" class="header-new-payment">&nbsp;</a>
+				<div class="header__account">
+					<a href="#" class="header-notification">
+						{{ icon('notification' , {'width': 15, 'height': 19}) }}
+						<span>2</span>
+					</a>
+					<a href="#" class="header-profile">
+						{{ icon('house' , {'width': 17, 'height': 17}) }}
+						<div class="header-profile__label">ООО «РОДНЫЕ ПРОСТОРЫ»</div>
+					</a>
+				</div>
+			</div>
+	</div>
+</header>
+
